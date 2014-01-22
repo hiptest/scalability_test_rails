@@ -13,7 +13,7 @@ module ScalabilityTest
             'end' => event.end.to_ms,
             'key' => event.name,
             'title' => title_of(event),
-          }
+          } unless @events.nil?
         end
       end
 
